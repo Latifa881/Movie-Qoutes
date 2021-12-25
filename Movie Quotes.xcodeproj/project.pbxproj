@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C3652978277759CB00629027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3652977277759CB00629027 /* AppDelegate.swift */; };
 		C365297A277759CB00629027 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3652979277759CB00629027 /* SceneDelegate.swift */; };
-		C365297C277759CB00629027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C365297B277759CB00629027 /* ViewController.swift */; };
+		C365297C277759CB00629027 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C365297B277759CB00629027 /* MoviesViewController.swift */; };
 		C365297F277759CB00629027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C365297D277759CB00629027 /* Main.storyboard */; };
 		C3652982277759CB00629027 /* Movie_Quotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3652980277759CB00629027 /* Movie_Quotes.xcdatamodeld */; };
 		C3652984277759D000629027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3652983277759D000629027 /* Assets.xcassets */; };
@@ -17,6 +17,10 @@
 		C3652992277759D100629027 /* Movie_QuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3652991277759D100629027 /* Movie_QuotesTests.swift */; };
 		C365299C277759D100629027 /* Movie_QuotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C365299B277759D100629027 /* Movie_QuotesUITests.swift */; };
 		C365299E277759D100629027 /* Movie_QuotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C365299D277759D100629027 /* Movie_QuotesUITestsLaunchTests.swift */; };
+		C36529AB277768F000629027 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36529AA277768F000629027 /* DataModel.swift */; };
+		C36529AD277769B700629027 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36529AC277769B700629027 /* MovieCollectionViewCell.swift */; };
+		C36529AF2777953200629027 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36529AE2777953200629027 /* QuotesViewController.swift */; };
+		C36529B227779C7F00629027 /* RVS-AutofillTextField in Frameworks */ = {isa = PBXBuildFile; productRef = C36529B127779C7F00629027 /* RVS-AutofillTextField */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,7 @@
 		C3652974277759CB00629027 /* Movie Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3652977277759CB00629027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3652979277759CB00629027 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C365297B277759CB00629027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C365297B277759CB00629027 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		C365297E277759CB00629027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3652981277759CB00629027 /* Movie_Quotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movie_Quotes.xcdatamodel; sourceTree = "<group>"; };
 		C3652983277759D000629027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		C3652997277759D100629027 /* Movie QuotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movie QuotesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C365299B277759D100629027 /* Movie_QuotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_QuotesUITests.swift; sourceTree = "<group>"; };
 		C365299D277759D100629027 /* Movie_QuotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_QuotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C36529AA277768F000629027 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		C36529AC277769B700629027 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		C36529AE2777953200629027 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36529B227779C7F00629027 /* RVS-AutofillTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,12 +111,15 @@
 			children = (
 				C3652977277759CB00629027 /* AppDelegate.swift */,
 				C3652979277759CB00629027 /* SceneDelegate.swift */,
-				C365297B277759CB00629027 /* ViewController.swift */,
+				C365297B277759CB00629027 /* MoviesViewController.swift */,
 				C365297D277759CB00629027 /* Main.storyboard */,
 				C3652983277759D000629027 /* Assets.xcassets */,
 				C3652985277759D000629027 /* LaunchScreen.storyboard */,
 				C3652988277759D000629027 /* Info.plist */,
 				C3652980277759CB00629027 /* Movie_Quotes.xcdatamodeld */,
+				C36529AA277768F000629027 /* DataModel.swift */,
+				C36529AC277769B700629027 /* MovieCollectionViewCell.swift */,
+				C36529AE2777953200629027 /* QuotesViewController.swift */,
 			);
 			path = "Movie Quotes";
 			sourceTree = "<group>";
@@ -146,6 +157,9 @@
 			dependencies = (
 			);
 			name = "Movie Quotes";
+			packageProductDependencies = (
+				C36529B127779C7F00629027 /* RVS-AutofillTextField */,
+			);
 			productName = "Movie Quotes";
 			productReference = C3652974277759CB00629027 /* Movie Quotes.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +232,9 @@
 				Base,
 			);
 			mainGroup = C365296B277759CB00629027;
+			packageReferences = (
+				C36529B027779C7F00629027 /* XCRemoteSwiftPackageReference "RVS_AutofillTextField" */,
+			);
 			productRefGroup = C3652975277759CB00629027 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,10 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C365297C277759CB00629027 /* ViewController.swift in Sources */,
+				C36529AB277768F000629027 /* DataModel.swift in Sources */,
+				C365297C277759CB00629027 /* MoviesViewController.swift in Sources */,
 				C3652982277759CB00629027 /* Movie_Quotes.xcdatamodeld in Sources */,
+				C36529AD277769B700629027 /* MovieCollectionViewCell.swift in Sources */,
 				C3652978277759CB00629027 /* AppDelegate.swift in Sources */,
 				C365297A277759CB00629027 /* SceneDelegate.swift in Sources */,
+				C36529AF2777953200629027 /* QuotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +648,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C36529B027779C7F00629027 /* XCRemoteSwiftPackageReference "RVS_AutofillTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RiftValleySoftware/RVS_AutofillTextField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C36529B127779C7F00629027 /* RVS-AutofillTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C36529B027779C7F00629027 /* XCRemoteSwiftPackageReference "RVS_AutofillTextField" */;
+			productName = "RVS-AutofillTextField";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C3652980277759CB00629027 /* Movie_Quotes.xcdatamodeld */ = {

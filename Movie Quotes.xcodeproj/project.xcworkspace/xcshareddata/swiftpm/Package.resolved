@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RVS_AutofillTextField",
+        "repositoryURL": "https://github.com/RiftValleySoftware/RVS_AutofillTextField.git",
+        "state": {
+          "branch": null,
+          "revision": "2cfceaf7c51a4063ca65860553b6ad213145060c",
+          "version": "1.2.9"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
